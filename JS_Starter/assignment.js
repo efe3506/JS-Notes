@@ -638,8 +638,18 @@
 //   başkent : 'Dublin',
 //   nüfus : 4.9,
 //   dil : 'ingilizce / irlandaca',
-//   komşular : ['ingiltere', 'galler', 'iskoçya']
+//   komşular : ['ingiltere', 'galler', 'iskoçya'],
+//   adaMı: true,
+//   açıklama: function() {
+//     return `${this.ülke}'da ${this.nüfus} milyon insan ${this.dil} konuşuyor ve ${this.komşular.length} kadar komşusu, ${this.başkent} adında bir başkenti var. `
+//   }, //return yerine console.log(``) şeklinde yazıp dışarıda direkt ülkem.açıklama() ile de yazdırabilirdin.
+//   adaKontrol: function() {
+//     return `${this.ülke} bir ${this.adaMı ? `ada ülkesidir ve komşuları denizaşırıdır. Bunlar: ${this.komşular}` :  `ada ülkesi değildir ve komşuları sınır komşularıdır. Bunlar: ${this.komşular}`}`
+//     //this.adaMı = !Boolean
+//   } 
+
 // }
+
 
 // console.log(`${ülkem.ülke}'da ${ülkem.nüfus} milyon insan ingilizce konuşuyor ve ${ülkem.komşular.length} kadar komşusu, ${ülkem.başkent} adında başkenti var.`);
 
@@ -648,4 +658,89 @@
 // console.log(`${ülkem.ülke}'da ${(ülkem.nüfus)-=2} milyon insan ingilizce konuşuyor ve ${ülkem.komşular.length} kadar komşusu, ${ülkem.başkent} adında başkenti var.`);
 
 
+//-------challange -------
+// console.log(ülkem.açıklama());
+// console.log(ülkem.adaKontrol());
+
+
+//--------kodlama #31 ----------
+
+// const muratAkdag = {
+//     ad: 'Murat',
+//     soyad: 'Akdağ',
+//     kilo: 78,
+//     boy: 1.69,
+//     BMIHesap: function() {
+//         return `${this.ad} ${this.soyad}'ın BMI'ı ${(this.kilo)/(this.boy**2)} `
+//     },
+//     //BMIHesap: function(){
+//     //     this.bmi = this.kilo / this.boy **2
+//     // }
+// }
+
+// const enginDerin = {
+//     ad: 'Engin',
+//     soyad: 'Derin',
+//     kilo: 92,
+//     boy: 1.95,
+//     BMIHesap: function() {
+//         return `${this.ad} ${this.soyad}'ın BMI'ı ${(this.kilo)/(this.boy**2)} `
+//     },
+//     //BMIHesap: function(){
+//     //     this.bmi = this.kilo / this.boy **2
+//     // }
+// }
+
+// console.log((muratAkdag.BMIHesap()),(enginDerin.BMIHesap()));
+
+// if(muratAkdag.BMIHesap() > enginDerin.BMIHesap()){
+//     console.log(`${muratAkdag.ad} ${muratAkdag.soyad}'ın BMI'ı (${muratAkdag.BMIHesap()}) daha büyük!`);
+// }else if(enginDerin.BMIHesap() > muratAkdag.BMIHesap()){
+//     console.log(`${enginDerin.ad} ${enginDerin.soyad}'ın BMI'ı (${enginDerin.BMIHesap()}) daha büyük!`);
+// }else {
+//     console.log(`${muratAkdag.ad} ${muratAkdag.soyad} ve ${enginDerin.ad} ${enginDerin.soyad}'ın BMI'ları eşit ((${muratAkdag.kilo / (muratAkdag.boy **2)}) ve (${enginDerin.kilo / (enginDerin.boy **2)})`);
+// }
+
+
 // OBJECTS intro end ================================
+
+
+//================== Loops / Döngüler ============================
+
+// for(let seçmen = 25; seçmen >=25 && seçmen <=50; seçmen += 1){
+//     console.log(`${seçmen} numaralı seçmen su anda oy kullanıyor`);
+// }
+
+//çarpım tablosu
+
+// for(let mult = 1; mult <= 100; mult ++){
+//     let mult1 = 2; //let mult1 = mult1 *= mult
+//     mult1 = 2 * mult;
+//     console.log(`2 x ${mult} = ${mult1}`);
+// }
+
+// for(let i = 1; i<=5; i = i + 3){
+//     console.log(`${i + 1}'i kontrol et`);
+// }
+
+
+// const cl = (txt) => console.log(txt);
+
+// for(let rep = 5; rep <= 10; rep = rep++){
+//     console.log(`ağırlık kaldırmak ${rep} tekrar`);
+// } sonsuz döngüye girer
+
+// for(let rep = 5; rep <= 10; rep = ++rep){
+//     console.log(`ağırlık kaldırmak ${rep} tekrar`);
+// } sonsuz döngü yaratmaz pre ++ olduğu için
+
+
+// for(a = 1; a <= 50; a++){
+//     console.log('bişeyler');
+// } //değişkenin atanması lazım (for içinde ya da dışında)
+
+
+
+
+
+//================== Loops / Döngüler End ========================

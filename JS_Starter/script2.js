@@ -256,10 +256,17 @@
 //         // yaşHesap: function(doğumYılı){
 //         //     return 2022 - doğumYılı
 //         // },
-//         yaşHesap: function(){
-//             console.log(this);
-//             return 2022 - this.doğumYılı
+//         // yaşHesap: function(){
+//         //     console.log(this);
+//         //     return 2022 - this.doğumYılı
+//         // },
+//         yaşHesap: function() {
+//             this.yaş = 2022 - this.doğumYılı;
+//             return this.yaş
 //         },
+//         özet: function(){
+//             return `${this.isim} ${this.yaşHesap()} yaşında ${this.meslek}'dır ve ehliyeti ${this.ehliyetiVarMı ? 'var' : 'yok'}`
+//         } //challange cözüm
 //     };
 
 // console.log(efe.yaşHesap());
@@ -268,7 +275,98 @@
 
 //-------this
 
+// console.log(efe.yaşHesap());
+// console.log(efe.yaş);
+// console.log(efe.özet());
+
+
+//-----challange-----
+//``Efe 26 yaşında developer ve ehliyeti var
+
 
 
 
 //================== Object End ====================
+
+
+//================== Loops / Döngüler ========================
+
+//-------For--------
+
+// console.log('ağırlık kaldırmak 1.tekrar');
+// console.log('ağırlık kaldırmak 1.tekrar');
+// console.log('ağırlık kaldırmak 1.tekrar');
+// console.log('ağırlık kaldırmak 1.tekrar');
+// console.log('ağırlık kaldırmak 1.tekrar');
+// console.log('ağırlık kaldırmak 1.tekrar');
+// console.log('ağırlık kaldırmak 1.tekrar');
+
+
+//koşul doğru olduğu sürece for döngüsü çalışır
+// for(let tekrar = 1; tekrar <= 10; tekrar++){
+//     console.log(`ağırlık kaldırmak ${tekrar} tekrar`);
+// }
+
+
+
+// const efeDizi = [
+//     'Efe',
+//     'Dallı',
+//     2022-1996,
+//     'biyolog',
+//     ['Sena', 'Seda', 'Sema'],
+//     true,
+// ];
+
+// const türler = [];
+
+// console.log(efeDizi[0]);
+// console.log(efeDizi[1]);
+// console.log(efeDizi[2]);
+// console.log(efeDizi[3]);
+// console.log(efeDizi[4]);
+
+// for(let i = 0; i < efeDizi.length; ++i){
+//     console.log(efeDizi[i], typeof efeDizi[i])
+//     //türler dizisini doldurmak
+//     // türler[i] = typeof efeDizi[i];
+//     türler.push(typeof efeDizi[i])
+// };
+
+// console.log(türler);
+
+// const yıllar = [1974, 1980, 1986, 1996, 2001];
+// const yaşlar = [];
+
+// for(let i = 0; i < yıllar.length ; i++){
+//    yaşlar.push(2022 - yıllar[i]);
+// }
+
+// console.log(yaşlar);
+
+
+
+//----continue-------
+
+
+// for(let i = 0; i < efeDizi.length; ++i){
+//     if(typeof efeDizi[i] !== 'string')
+//     continue
+//     console.log(efeDizi[i], typeof efeDizi[i])
+// };
+
+
+//----break---------
+
+// for(let i = 0; i < efeDizi.length; ++i){
+//     if(typeof efeDizi[i] === 'number')
+//     break
+//     console.log(efeDizi[i], typeof efeDizi[i]);
+// }
+
+
+
+
+
+//================== Loops / Döngüler End ====================
+
