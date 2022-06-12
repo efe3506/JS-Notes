@@ -88,7 +88,6 @@
 
 // console.log(emekliliğeKalanSüre(1996, 'efe'));
 
-
 //Function calling other function =================================
 
 // function meyveleriParçala(meyve){
@@ -105,8 +104,6 @@
 // const meyveler = meyveiİşleme(2,3)
 
 // console.log(meyveler);
-
-
 
 //================== ARRAY ======================
 
@@ -164,7 +161,6 @@
 //  console.log(arkadaş);
 //------------eleman kaldırma----------------
 
-
 // arkadaş.pop()
 // console.log(arkadaş);
 // arkadaş.pop()
@@ -172,7 +168,6 @@
 
 // const kaldırılan = arkadaş.pop()
 // console.log(kaldırılan);
-
 
 // arkadaş.shift()
 // console.log(arkadaş);
@@ -185,8 +180,6 @@
 
 // arkadaş.push(23);
 // console.log(arkadaş.includes(23));
-
-
 
 //================== ARRAY END======================
 
@@ -211,7 +204,6 @@
 
 // console.log(efeDizi);
 // console.log(efe);
-
 
 // const efe = {
 //     isim : 'Efe',
@@ -244,7 +236,6 @@
 // efe['twitter'] = '@efe'
 
 // console.log(efe);
-
 
 // const efe = {
 //         isim : 'Efe',
@@ -279,19 +270,14 @@
 // console.log(efe.yaş);
 // console.log(efe.özet());
 
-
 //-----challange-----
 //``Efe 26 yaşında developer ve ehliyeti var
 
-
-
-
 //================== Object End ====================
-
 
 //================== Loops / Döngüler ========================
 
-//-------For--------
+//-------For loop----------------------------------
 
 // console.log('ağırlık kaldırmak 1.tekrar');
 // console.log('ağırlık kaldırmak 1.tekrar');
@@ -300,14 +286,11 @@
 // console.log('ağırlık kaldırmak 1.tekrar');
 // console.log('ağırlık kaldırmak 1.tekrar');
 // console.log('ağırlık kaldırmak 1.tekrar');
-
 
 //koşul doğru olduğu sürece for döngüsü çalışır
 // for(let tekrar = 1; tekrar <= 10; tekrar++){
 //     console.log(`ağırlık kaldırmak ${tekrar} tekrar`);
 // }
-
-
 
 // const efeDizi = [
 //     'Efe',
@@ -344,17 +327,13 @@
 
 // console.log(yaşlar);
 
-
-
 //----continue-------
-
 
 // for(let i = 0; i < efeDizi.length; ++i){
 //     if(typeof efeDizi[i] !== 'string')
 //     continue
 //     console.log(efeDizi[i], typeof efeDizi[i])
 // };
-
 
 //----break---------
 
@@ -364,9 +343,57 @@
 //     console.log(efeDizi[i], typeof efeDizi[i]);
 // }
 
+//-----Nested loops-----
+
+// const efeDizi = [
+//   "Efe",
+//   "Dallı",
+//   2022 - 1996,
+//   "biyolog",
+//   ["Sena", "Seda", "Sema"],
+//   true,
+// ];
+
+//01234
+//43210
+
+// for(let i = efeDizi.length - 1 ; i >= 0 ; i--){
+//     console.log(efeDizi[i]);
+// }
+
+
+// for(let egzersiz = 1; egzersiz < 4; egzersiz++){
+//     console.log(`${egzersiz} numaralı egzersiz`);
+//     for(let tekrar = 1; tekrar <= 5; tekrar++){
+//         console.log(`${egzersiz}. egzersizin ${tekrar} tekrar`);
+//     }
+// }
+
+//----- While loop --------------------------------------
+
+// for(let tekrar = 1; tekrar <= 10; tekrar ++){
+//     console.log(`ağırlık kaldırmak ${tekrar}.tekrar`);
+// };
+
+// let tekrar = 1;
+// while(tekrar <= 10){
+//     console.log(`ağırlık kaldırmak ${tekrar}.tekrar`);
+//     tekrar++;
+// };
+
+
+// let zar = Math.trunc(Math.random() * 6) + 1;
+// // console.log(zar);
+
+// while( zar !== 6){
+//     console.log(`${zar} sayısı geldi`);
+//     zar = Math.trunc(Math.random() * 6) + 1;
+//     if( zar === 6){
+//         console.log("loop bitti");
+//     }
+// }
 
 
 
 
 //================== Loops / Döngüler End ====================
-

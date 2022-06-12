@@ -739,7 +739,167 @@
 //     console.log('bişeyler');
 // } //değişkenin atanması lazım (for içinde ya da dışında)
 
+//------ challange -----
 
+// function dünyanınYüzdesi1(popülasyon){
+//     return (popülasyon / 7900) * 100;
+// }
+
+// const popülasyon = [10, 1441, 84, 5];
+// const yüzdeler2 = [];
+
+// for(let i = 0; i < popülasyon.length; i++){
+//     yüzdeler2.push(dünyanınYüzdesi1(popülasyon[i]));
+// }
+
+// console.log(yüzdeler2);
+
+
+//-------- challange --------
+
+// const komşularListesi = [['Kanada', 'Meksika'], ['İspanya'], ['Norveç', 'İsveç','Rusya']];
+
+// for(let komşu = 0 ; komşu < komşularListesi.length; komşu++){
+//     // console.log(`${komşularListesi} kadar komşudan`);
+//     for(let komşuTek = 0; komşuTek < komşularListesi[komşuTek].length; komşuTek++){
+//         console.log(komşularListesi[komşu][komşuTek]);
+//     }
+// }
+
+//çözüm
+// for(let i = 0 ; i < komşularListesi.length; i++){
+//     for(let y = 0; y < komşularListesi[i].length; y++){
+//         console.log(`komşu: ${komşularListesi[i][y]}`);
+//     }
+// }
+
+
+//----- While challange -----
+
+// function dünyanınYüzdesi1(popülasyon){
+//         return (popülasyon / 7900) * 100;
+//     };
+
+
+// const popülasyon = [10, 1441, 84, 5];
+// const yüzdeler3 = [];
+
+// let i = 0;
+// while(i < popülasyon.length){
+//     yüzdeler3.push(dünyanınYüzdesi1(popülasyon[i]));
+//     i++;
+// }
+
+// console.log(yüzdeler3);
+
+//===== kodlama#32 ==============
+//10 adet faturayı içerecek bir 'fatura' dizisi oluşturun
+//bahşişler ve toplamlar için boş diziler oluşturun ('bahşişler' ve toplamlar 'toplamlar')
+//bahşişHesap fonksiyonunu kullanacağız
+//veriler: 22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
+//
+
+
+
+// const bahşişHesap = (fatura) => {
+//   const bahşiş =
+//     fatura >= 50 && fatura <= 300
+//       ? fatura * 0.15 
+//       : fatura * 0.2
+//   ;
+//   return bahşiş;
+// };
+
+
+// const fatura = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const bahşişler =[];
+// const toplam = [];
+
+
+
+//hoca çözüm---------------------
+
+// for(let i = 0; i < fatura.length ; i++){
+//     const bahşiş = bahşişHesap(fatura[i]);
+//     bahşişler.push(bahşiş);
+//     toplam.push(bahşişler[i] + fatura[i]);
+// }
+
+// console.log(fatura, bahşişler, toplam);
+
+
+// const ortHesap = function(arr){
+//     let toplam = 0;
+//     for(let i = 0; i < arr.length ; i++){
+//         toplam += arr[i];
+//     }
+//     return toplam / arr.length;
+// }
+
+// console.log(ortHesap([2,3,4]));
+// console.log(ortHesap(bahşişler));
+// console.log(ortHesap(toplam));
+
+
+// const ortHesap2 = function (arr){
+//     let toplam = 0;
+//     let sayaç = 0;
+//     for(let i = 0; i < arr.length ; i++){
+//         if(typeof arr[i] !== 'number'){
+//             continue
+//             toplam += arr[i];
+//             sayaç++ //veya sayaç += 1
+//         }
+//     }
+
+//     toplam === 0 ? console.log(`dizede hiçbir değer yok`) : console.log(`ortalama sayı ${toplam / sayaç}`);;
+// }
+
+// console.log(ortHesap2([40,50,60, 'dumdum', true, false, 20, 100]));
+
+
+
+//benim çözümüm-------------------
+
+// for(let i = 0; i < fatura.length; i++){
+//         bahşişler.push(bahşişHesap(fatura[i]));
+//         toplam.push(bahşişler[i] + fatura[i])
+// }
+
+// console.log(bahşişler, toplam);
+
+
+// function ortHesap(arr){
+//     let toplam = 0
+//     // for(let i = 0; i < arr.length ; i++){
+//     //     toplam += arr[i]
+//     // }  for döngüsüyle
+//     let i = 0;
+//     while(i < arr.length){
+//         toplam += arr[i];
+//         i++;
+//     } // while döngüsüyle
+//     return toplam / arr.length;
+// }
+
+// console.log(ortHesap(toplam));
+
+
+// toplam.push('selam', 'dummy text', 'vs')
+
+
+// function ortHesap2(arr){
+//     let toplam = 0
+//     for(let i = 0; i < arr.length ; i++){
+//         if(typeof arr[i] === 'string')
+//         continue
+//         toplam += arr[i];
+//     }
+//     return toplam / (arr.length - 3)
+// }
+
+
+// console.log(ortHesap2(toplam));
 
 
 
