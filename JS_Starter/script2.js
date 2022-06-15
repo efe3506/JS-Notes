@@ -88,6 +88,7 @@
 
 // console.log(emekliliğeKalanSüre(1996, 'efe'));
 
+
 //Function calling other function =================================
 
 // function meyveleriParçala(meyve){
@@ -104,6 +105,8 @@
 // const meyveler = meyveiİşleme(2,3)
 
 // console.log(meyveler);
+
+
 
 //================== ARRAY ======================
 
@@ -161,6 +164,7 @@
 //  console.log(arkadaş);
 //------------eleman kaldırma----------------
 
+
 // arkadaş.pop()
 // console.log(arkadaş);
 // arkadaş.pop()
@@ -168,6 +172,7 @@
 
 // const kaldırılan = arkadaş.pop()
 // console.log(kaldırılan);
+
 
 // arkadaş.shift()
 // console.log(arkadaş);
@@ -180,6 +185,8 @@
 
 // arkadaş.push(23);
 // console.log(arkadaş.includes(23));
+
+
 
 //================== ARRAY END======================
 
@@ -204,6 +211,7 @@
 
 // console.log(efeDizi);
 // console.log(efe);
+
 
 // const efe = {
 //     isim : 'Efe',
@@ -237,6 +245,7 @@
 
 // console.log(efe);
 
+
 // const efe = {
 //         isim : 'Efe',
 //         soyisim : 'Dallı',
@@ -247,17 +256,10 @@
 //         // yaşHesap: function(doğumYılı){
 //         //     return 2022 - doğumYılı
 //         // },
-//         // yaşHesap: function(){
-//         //     console.log(this);
-//         //     return 2022 - this.doğumYılı
-//         // },
-//         yaşHesap: function() {
-//             this.yaş = 2022 - this.doğumYılı;
-//             return this.yaş
+//         yaşHesap: function(){
+//             console.log(this);
+//             return 2022 - this.doğumYılı
 //         },
-//         özet: function(){
-//             return `${this.isim} ${this.yaşHesap()} yaşında ${this.meslek}'dır ve ehliyeti ${this.ehliyetiVarMı ? 'var' : 'yok'}`
-//         } //challange cözüm
 //     };
 
 // console.log(efe.yaşHesap());
@@ -266,134 +268,7 @@
 
 //-------this
 
-// console.log(efe.yaşHesap());
-// console.log(efe.yaş);
-// console.log(efe.özet());
 
-//-----challange-----
-//``Efe 26 yaşında developer ve ehliyeti var
+
 
 //================== Object End ====================
-
-//================== Loops / Döngüler ========================
-
-//-------For loop----------------------------------
-
-// console.log('ağırlık kaldırmak 1.tekrar');
-// console.log('ağırlık kaldırmak 1.tekrar');
-// console.log('ağırlık kaldırmak 1.tekrar');
-// console.log('ağırlık kaldırmak 1.tekrar');
-// console.log('ağırlık kaldırmak 1.tekrar');
-// console.log('ağırlık kaldırmak 1.tekrar');
-// console.log('ağırlık kaldırmak 1.tekrar');
-
-//koşul doğru olduğu sürece for döngüsü çalışır
-// for(let tekrar = 1; tekrar <= 10; tekrar++){
-//     console.log(`ağırlık kaldırmak ${tekrar} tekrar`);
-// }
-
-// const efeDizi = [
-//     'Efe',
-//     'Dallı',
-//     2022-1996,
-//     'biyolog',
-//     ['Sena', 'Seda', 'Sema'],
-//     true,
-// ];
-
-// const türler = [];
-
-// console.log(efeDizi[0]);
-// console.log(efeDizi[1]);
-// console.log(efeDizi[2]);
-// console.log(efeDizi[3]);
-// console.log(efeDizi[4]);
-
-// for(let i = 0; i < efeDizi.length; ++i){
-//     console.log(efeDizi[i], typeof efeDizi[i])
-//     //türler dizisini doldurmak
-//     // türler[i] = typeof efeDizi[i];
-//     türler.push(typeof efeDizi[i])
-// };
-
-// console.log(türler);
-
-// const yıllar = [1974, 1980, 1986, 1996, 2001];
-// const yaşlar = [];
-
-// for(let i = 0; i < yıllar.length ; i++){
-//    yaşlar.push(2022 - yıllar[i]);
-// }
-
-// console.log(yaşlar);
-
-//----continue-------
-
-// for(let i = 0; i < efeDizi.length; ++i){
-//     if(typeof efeDizi[i] !== 'string')
-//     continue
-//     console.log(efeDizi[i], typeof efeDizi[i])
-// };
-
-//----break---------
-
-// for(let i = 0; i < efeDizi.length; ++i){
-//     if(typeof efeDizi[i] === 'number')
-//     break
-//     console.log(efeDizi[i], typeof efeDizi[i]);
-// }
-
-//-----Nested loops-----
-
-// const efeDizi = [
-//   "Efe",
-//   "Dallı",
-//   2022 - 1996,
-//   "biyolog",
-//   ["Sena", "Seda", "Sema"],
-//   true,
-// ];
-
-//01234
-//43210
-
-// for(let i = efeDizi.length - 1 ; i >= 0 ; i--){
-//     console.log(efeDizi[i]);
-// }
-
-
-// for(let egzersiz = 1; egzersiz < 4; egzersiz++){
-//     console.log(`${egzersiz} numaralı egzersiz`);
-//     for(let tekrar = 1; tekrar <= 5; tekrar++){
-//         console.log(`${egzersiz}. egzersizin ${tekrar} tekrar`);
-//     }
-// }
-
-//----- While loop --------------------------------------
-
-// for(let tekrar = 1; tekrar <= 10; tekrar ++){
-//     console.log(`ağırlık kaldırmak ${tekrar}.tekrar`);
-// };
-
-// let tekrar = 1;
-// while(tekrar <= 10){
-//     console.log(`ağırlık kaldırmak ${tekrar}.tekrar`);
-//     tekrar++;
-// };
-
-
-// let zar = Math.trunc(Math.random() * 6) + 1;
-// // console.log(zar);
-
-// while( zar !== 6){
-//     console.log(`${zar} sayısı geldi`);
-//     zar = Math.trunc(Math.random() * 6) + 1;
-//     if( zar === 6){
-//         console.log("loop bitti");
-//     }
-// }
-
-
-
-
-//================== Loops / Döngüler End ====================
