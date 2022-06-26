@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #0073B1;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #DCD7C9;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--white);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* Default template'imize ek olarak ana kapsayıcımız için: */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Default tamplate dışı Css */
+
+.generator-div{
+  width: 40rem;
+  padding: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+}
+
+hr{
+  border:2px solid var(--dark-grey);
+}
+
+/* counter-div içerisindeki bütün child'lara ulaşmak için */
+
+.generator-div > * {
+  margin-bottom: 2rem;
+}
+
+.number{
+  font-size: 4rem;
+}
+
+.buttons button{
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: var(--grey);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.generate{
+  background-color: var(--grey);
+  color: var(--black);
+  transition: 0.3s;
+}
+
+/* Kullanıcı generate buttonuna basana kadar saklı kalacak seçenekler */
+.hidden{
+  display: none !important;
+}
+
+.choose{
+  padding: 1rem;
+  background-color: var(--light-blue);
+  display: flex;
+  justify-content: space-evenly;
+  transition: 0.3s ease !important;
+}
+
+
+.ten, .oneh{
+  background-color: var(--grey) !important;
+  color: var(--black) !important;
+  transition: 0.3s;
+}
+
+.ten:hover, .oneh:hover, .generate:hover{
+  background-color: var(--white) !important;
+  box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75) !important; 
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--* Ana kapsayıcı -->
+    <div class="container">
+
+      <!-- ?Sayaç kısmı/ Etkileşimin sağlanacağı kapsayıcı -->
+      <div class="generator-div">
+        <h1>Random Number Generator</h1>
+        <span class="number">0</span>
+        <hr>
+        <!-- ?Tıklanabilir buttonlar JS manipülasyonu için -->
+        <div class="buttons">
+
+          <button class="generate">
+            Generate...
+          </button>
+
+          <!-- ?generate'e tıklandığında çıkacak olan iki seçenek -->
+          <div class="choose hidden">
+
+            <button class="ten">
+              between 1 - 10
+            </button>
+
+            <button class="oneh">
+              between 10 - 100
+            </button>
+            
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
