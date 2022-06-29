@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* css ekleri */
+
+body{
+  background-color: var(--light-gray-blue);
+}
+
+h2{
+  font-size: 3.5rem;
+  margin-bottom: 3.5rem;
+  color: var(--dark-grey);
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pal{
+  width: 70rem;
+  background-color: var(--grey);
+  padding: 10rem 5rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width:700px) {
+  .pal{
+    width: 50rem;
+  }
+  p.result{
+    font-size: 2rem;
+  }
+
+  .btn{
+    margin: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  input{
+    width: 60%;
+  }
+}
+
+.pal > *{
+  border: none;
+  outline: none;
+  padding: 1rem 5px;
+}
+
+input{
+  width: 70%;
+  background-color: var(--grey);
+  border-bottom: 4px solid var(--light-gray-blue) !important;
+  font-size: 2.5rem;
+}
+
+.btn{
+  width: 25%;
+  margin-left: 4%;
+  padding: 1.5rem 2rem;
+  background-color: var(--light-gray-blue);
+  border-bottom: 2px solid var(--light-gray-blue) !important;
+  font-size: 2.2rem;
+  border-radius: 10px;
+  color: var(--grey);
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.btn:hover{
+  background-color: var(--light-blue);
+}
+
+p.result{
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+}
