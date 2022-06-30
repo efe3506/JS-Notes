@@ -117,7 +117,8 @@ input{
 }
 
 .btn:hover{
-  background-color: var(--light-blue);
+  background-color: var(--color-primary);
+  color: var(--light-yellow);
 }
 
 p.result{
