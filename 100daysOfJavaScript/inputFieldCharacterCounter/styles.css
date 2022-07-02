@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #0073B1;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #b0a6a3;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey);
+}
+
+h1{
+  color: var(--black);
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* Default template'imize ek olarak ana kapsayıcımız için: */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Default tamplate dışı Css */
+
+.counter-div{
+  width: 60rem;
+  padding: 5rem;
+  /*divin şeffaf bir hal alması için*/
+  background-color:  rgba(255, 255, 255, .05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  /* . */
+  color: var(--black);
+  text-align: center;
+  border-radius: 30px;
+}
+
+.counter-div h1{
+  margin-bottom: 3.5rem;
+}
+
+hr{
+  margin-top: 20px;
+  border:2px solid var(--black);
+}
+
+/* counter-div içerisindeki bütün child'lara ulaşmak için */
+
+.counter-div > * {
+  margin-bottom: 2rem;
+}
+
+.count{
+  font-size: 4rem;
+  background-color:  rgba(255, 255, 255, .05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  border: 2px solid var(--dark-grey);
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.input{
+  background-color: transparent;
+  border: 2px solid var(--black);
+  border-radius: 7.5px !important;
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ufak bir responsivelik */
+@media screen and (max-width: 650px) {
+  .counter-div{
+    width: 40rem;
+  }
+}
