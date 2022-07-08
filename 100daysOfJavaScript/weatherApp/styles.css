@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*renk paleti: https://colorhunt.co/palette/6e85b7b2c8dfc4d7e0f8f9d7 */
+
+body {
+    background: linear-gradient(to right bottom, #6E85B7, #F8F9D7);
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    height: 80vh;
+    background: url(images/cityNight2.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* blurlarştır */
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
+    z-index: 0;
+}
+
+.top{
+    text-align: center;
+    z-index: 99;
+}
+
+.top h1{
+    color: #F8F9D7;
+    line-height: 2;
+    letter-spacing: -.5px;
+}
+
+.top input,
+.top button{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+}
+
+.top input{
+    /* gölgeli blurlu olması için */
+    background-color: rgba(0,0,0, .5);
+    border-bottom: 2px solid #C4D7E0;
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.top input:focus{
+    color: #fff;
+    font-size: 15px;
+}
+
+.top input::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+.top button{
+    background-color: #B2C8DF;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.top button:hover{
+    background-color: #6E85B7;
+    color: #F8F9D7;
+}
+
+.top .error{
+    color: #F8F9D7;
+    font-size: 14px;
+}
+
+.icon{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.location{
+    padding-bottom: 15px;
+    text-align: center;
+    color: #F8F9D7;
+    line-height: 1.6;
+}
+
+.location .city{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.current{
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    color: #F8F9D7;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.current::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #F8F9D7;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.current > *{
+    padding: 10px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+}
