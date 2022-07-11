@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  padding-top: 30px;
+  background: url(/images/sandWatch.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  font-size: 55px;
+  color: #fff;
+  line-height: 2;
+  background-color: rgba(0,0,0, 1);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container p{
+  background-color: rgba(0, 0, 0, .5);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button{
+  outline: none;
+  border: 1px solid var(--black);
+  padding: 8px 16px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, .5);
+  color: var(--white);
+  border-radius: 5px;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, .8);
+  color: var(--white);
+}
+
+#btn{
+  margin-top: 15px;
+}
+
+#countdown{
+  background-color: rgba(0,0,0, 1);
+  padding: 15px;
+  font-size: 45px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* popup css */
+
+.modal{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.modal-content {
+  width: 50%;
+  max-width: 80rem;
+  background-color: var(--white-blue);
+  border-radius: 25px;
+  margin: 15% auto;
+  padding: 2rem;
+  text-align: center;
+  /* keyframes özelliği ile animasyon alacak kapsayıcı bu olduğu için animation özelliklerini aşağıda veriyoruz animasyonİsmi/davranış/süre */
+  animation: slide ease .8s;
+}
+
+.modal-content h2, .modal-content p{
+  color: var(--black);
+  margin: 10px;
+  padding: 10px;
+}
+
+.modal-content h2{
+  font-size: 3rem;
+}
+
+.modal-content p{
+  font-size: 2rem;
+}
+
+@keyframes slide{
+
+  0%{
+    transform: translateY(-100rem);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+
+.close{
+  /* position: absolute;
+  top: 5px;
+  right: 10px; */
+  margin: 0 0 40% 95%;
+  padding: 2px 4px;
+  color: var(--black);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* modal-content'e JS ile kapatılacağında aşağıdaki sınıfı ve sınıf içerisindeki animasyon/keyframes özelliğini veriyoruz */
+.slide-up{
+  animation: slide-up ease .8s;
+}
+
+@keyframes slide-up{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-100rem);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #countdown{
+    font-size: 30px;
+  }
+  h1{
+    font-size: 45px;
+  }
+  .modal-content{
+    width: 70%;
+  }
+}
