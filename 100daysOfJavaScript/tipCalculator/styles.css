@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-green: #CAE4DB;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #00303F;
+  --color-sec: #CDAC81;
+  --grey: #F5F4F4;
+  --dark-grey: #222831;
+}
+
+/* renk paleti: https://colorhunt.co/palette/f5f4f4cae4dbcdac8100303f */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+section{
+  height: 100vh;
+  background: linear-gradient(to right, #68A690, var(--light-green));
+  /* background-color: var(--light-green); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc{
+  width: 50rem;
+  background-color: var(--grey);
+  border-radius: 5px;
+}
+
+h2{
+  font-size: 4rem;
+  background-color: var(--color-sec);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+
+form, 
+form > *{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input, select{
+  font-size: 1.6rem;
+  padding: 7px;
+  width: 20rem;
+  text-align: right;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn{
+  margin: 8px 0;
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover{
+  background-color: var(--color-sec);
+}
+
+.error{
+  color: red;
+  font-weight: 400;
+  display: none;
+}
+
+.result{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.result > *{
+  background-color: var(--white);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+.total{
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .calc{
+    width: 38rem;
+  }
+
+  .calc form label{
+    text-align: left;
+  }
+
+  .calc form input, 
+  .calc form select{
+    width: 150px;
+  }
+}
