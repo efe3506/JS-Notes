@@ -161,11 +161,11 @@ footer a{
 /* scroll to top */
 .top{
   position: fixed;
-  bottom: 3rem;
+  bottom: 8rem;
   right: 3rem;
   background-color: transparent;
-  padding: 1rem;
-  border: 1px solid var(--color-sec);
+  padding: 1.5rem .75rem;
+  border: 2px solid var(--color-sec);
   border-radius: 3px;
   outline: none;
   font-size: 2rem;
@@ -175,11 +175,13 @@ footer a{
   opacity: 0;
   transform: translateY(10rem);
   transition: all .3s;
+  display: flex;
+  align-items: center;
 }
 
 .top:hover{
   background-color: #eee;
-  border-color: #fff;
+  border-color: #eee;
 }
 
 .show-btn{
