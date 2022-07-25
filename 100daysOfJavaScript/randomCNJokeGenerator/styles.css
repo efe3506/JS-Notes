@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #81CACF;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+  --light-yellow: #FFEA11;
+  --dark-gray-blue: #355764;
+  --dark-green: #5A8F7B;
+}
+
+/* renk paleti: https://colorhunt.co/palette/3557645a8f7b81cacfffea11 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(125deg, var(--dark-grey), var(--dark-gray-blue), var(--dark-green));
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #eee;
+}
+
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row{
+  height: 100vh;
+}
+
+.joke-div{
+  background: linear-gradient(135deg, rgba(255,255,255, .1), rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px p rgba(0,0,0, .37);
+  border: 1px solid rgba(255,255,255, .18);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 10rem !important;
+}
+
+.btn{
+  border: 2px solid rgba(255,255,255, .18);
+  color: #eee;
+  outline: none;
+}
+
+.btn:focus{
+  border-color: var(--dark-green);
+  box-shadow: 0 0 5px rgba(255,255,255, .18);
+}
+
+.btn:hover{
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+  color: #eee;
+}
