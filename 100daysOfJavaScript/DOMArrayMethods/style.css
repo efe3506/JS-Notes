@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #38444D;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1{
+    color: #eee;
+    padding: 20px;
+}
+
+.container {
+  background-color: #04AA6D;
+  border-radius: 8px;
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+aside {
+  padding: 10px 20px;
+  width: 250px;
+  border-right: 2px solid #eee;
+}
+
+button {
+  background-color: #eee;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all .3s ease-out;
+}
+
+button:hover{
+    background-color: #15202B;
+    color: #eee;
+}
+
+main {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+main div h3{
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+h2 {
+  color: #eee;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+h3 {
+    background-color: #eee;
+  border-bottom: 1px solid #111;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  margin: 20px 0 0;
+}
+
+.person{
+    background-color: #15202B;
+    color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 500px){
+    button{
+        font-size: 12px;
+    }
+
+    .person{
+        font-size: 14px;
+    }
+
+    .main .font-set h3{
+        font-size: 14px;
+    }
+}
