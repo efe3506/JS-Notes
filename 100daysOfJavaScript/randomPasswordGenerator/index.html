@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container box">
+        <h1>Şifre Oluştur</h1>
+
+        <div class="p-header">
+          <input type="text" id="password">
+          <button class="copy" id="copy"><i class="ri-file-copy-2-line"></i></button>
+        </div>
+
+        <div class="p-body">
+
+          <div class="form-field">
+            <label for="p-length">Şifre Uzunluğu</label>
+            <input type="number" id="p-length" value="12" min="8" max="30">
+          </div>
+
+          <div class="form-field">
+            <label for="p-uppercase">Büyük Harf Ekle</label>
+            <input type="checkbox" id="p-uppercase" class="check-box" checked>
+          </div>
+
+          <div class="form-field">
+            <label for="p-lowercase">Küçük Harf Ekle</label>
+            <input type="checkbox" id="p-lowercase" class="check-box">
+          </div>
+
+          <div class="form-field">
+            <label for="p-number">Sayı Ekle</label>
+            <input type="checkbox" id="p-number" class="check-box">
+          </div>
+
+          <div class="form-field">
+            <label for="p-symbol">Sembol Ekle</label>
+            <input type="checkbox" id="p-symbol" class="check-box">
+          </div>
+
+          <button id="submit">Şifre Oluştur</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

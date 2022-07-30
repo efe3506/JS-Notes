@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* renk paleti: https://colorhunt.co/palette/2c3333395b64a5c9cae7f6f2 */
+:root {
+  --white: #fff;
+  --black: #2C3333;
+  --blue: #005490;
+  --light-blue: #A5C9CA;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #395B64;
+  --color-sec: #E7F6F2;
+  --grey: #fafafa;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* başla */
+
+section{
+  height: 100vh;
+  background: linear-gradient(150deg, var(--black), var(--color-primary),var(--color-primary), var(--light-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  background: linear-gradient(135deg, rgba(255,255,255, .1), rgba(255,255,255,0));
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px p rgba(0,0,0, .37);
+  border: 1px solid rgba(255,255,255, .18);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 45rem;
+}
+
+h1{
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form-field label{
+  cursor: pointer;
+}
+
+.check-box{
+  position: relative;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.p-header{
+  position: relative;
+}
+
+.p-header input{
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1.4rem;
+}
+
+.copy{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.1rem;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid var(--dark-grey);
+  outline: none;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.copy i{
+  font-size: 1.95rem;
+}
+
+.copy:hover{
+  background-color: var(--dark-grey);
+  color: var(--color-sec);
+  border-color: var(--color-sec);
+}
+
+.form-field input[type = "number"]{
+  padding: 3px 5px;
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 3px 0 0 0 ;
+  font-size: 1.4rem;
+}
+
+#submit{
+  width: 100%;
+  padding: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--color-sec);
+  color: var(--dark-grey);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#submit:hover{
+  background-color: var(--dark-grey);
+  color: var(--color-sec);
+}
+
+/* bitir */
