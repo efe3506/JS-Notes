@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* renk paleti: https://colorhunt.co/palette/1c3879607eaaeae3d2f9f5eb */
+:root {
+  --white-winter: #F9F5EB;
+  --black: #1c2b2d;
+  --navy-blue: #1C3879;
+  --light-blue: #607EAA;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --beige: #EAE3D2;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* başla */
+
+body{
+  background-color: var(--beige);
+}
+
+section{
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.container{
+  max-width: 65rem;
+  margin: 5rem auto;
+}
+
+.add-item{
+  background-color: var(--navy-blue);
+  padding: 5rem 0;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.add-item form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-item input{
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--beige);
+  width: 75%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--white-winter);
+  background-color: transparent;
+  margin-right: 1rem;
+}
+
+::placeholder{
+  color: var(--beige);
+  opacity: .4;
+}
+
+form button{
+  width: 10%;
+  font-size: 1.6rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: var(--light-blue);
+  color: var(--beige);
+  padding: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+form button:hover{
+  background-color: var(--light-gray-blue);
+  color: var(--black);
+}
+
+h2{
+  font-size: 4rem;
+  text-align: center;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+ol li{
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  background-color: var(--white-winter);
+  border-radius: 5px;
+  padding: 1rem;
+  position: relative;
+}
+
+ol li:nth-child(odd){
+  background-color: var(--light-blue);
+  /* color: var(--white-winter); */
+}
+
+li button i{
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  position: absolute;
+  right: 1rem;
+  top: .65rem;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+li button i:hover{
+  background-color: var(--beige);
+}
+
+.clear{
+  padding: 1rem;
+  margin: 1rem auto;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 1px solid var(--navy-blue);
+  outline: none;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+.clear:hover{
+  background-color: var(--navy-blue);
+  color: var(--white-winter);
+}
