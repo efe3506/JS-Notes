@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --light-gray-blue: #a7b9e3;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+html {
+  font-size: 10px;
+} */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--blue);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* start */
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  width: 30rem;
+  height: 35rem;
+  margin: 0 auto;
+  background-color: var(--light-gray-blue);
+  padding: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.result {
+  color: var(--dark-grey);
+  background-color: var(--white);
+  height: 4.5rem;
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 2px solid var(--color-sec);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.clear {
+  width: 18%;
+  height: 4.5rem;
+  background-color: rgb(175, 15, 15);
+  padding: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+  transition: all .2s;
+}
+
+.clear:hover{
+  background-color: red;
+  font-weight: 600;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  font-size: 1.6rem;
+}
+
+.keys li {
+  list-style-type: none;
+  width: 5rem;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 0 8px var(--dark-grey);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.keys li:hover {
+  background-color: var(--light-blue);
+  color: var(--white);
+  transform: translateY(-5px);
+}
+
+.keys .equals {
+  background-color: var(--color-sec);
+  color: var(--white);
+}
+
+.keys .equals:hover{
+  background-color: orangered;
+}
