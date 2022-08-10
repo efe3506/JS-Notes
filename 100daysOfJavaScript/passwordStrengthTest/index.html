@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <title>Password Strength BG</title>
+  </head>
+  <body>
+    <div class="background" id="background"></div>
+      <div class="bg-white rounded p-10 text-center shadow-md">
+        <h1 class="text-3xl">Password Strength Test</h1>
+        <p class="text-sm text-gray-700 mt-2">
+          Change the password to see the effect
+        </p>
+        <div class="my-4 text-left">
+          <label for="email" class="text-ray-900">Email:</label>
+          <input
+            type="text"
+            class="border block w-full p-2 mt-2 rounded"
+            id="email"
+            placeholder="Enter Email"
+          />
+        </div>
+
+        <div class="my-4 text-left psw">
+          <label for="password" class="text-ray-900">Password:</label>
+          <input
+            type="password"
+            class="border block w-full p-2 mt-2 rounded"
+            id="password"
+            placeholder="Enter Password"
+          />
+        </div>
+        <button class="bg-black text-white py-2 mt-4 inline-block w-full rounded">
+          Submit
+        </button>
+      </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
