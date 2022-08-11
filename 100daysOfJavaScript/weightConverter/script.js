@@ -39,6 +39,7 @@ function convertWeight(e) {
     kilograms.value = (x / 2.2046).toFixed(3);
     grams.value = (x / 0.0022046).toFixed(3);
     ounces.value = (x * 16).toFixed(3);
+    //toFixed(3), virgül sonrası alacağı ondalık
   }
   if (e.target.classList.contains("kilograms")) {
     let x = e.target.value;

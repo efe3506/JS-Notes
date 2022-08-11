@@ -17,7 +17,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, var(--blue), var(--light-blue), var(--light-gray-blue));
+  background: linear-gradient(60deg, var(--blue), var(--light-blue), var(--light-gray-blue));
   display: flex;
   justify-content: center;
   align-items: center;
